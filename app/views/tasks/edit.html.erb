@@ -1,0 +1,10 @@
+<h3>Edit Task : <%= link_to @task.description, task_path(@list.id) %> 
+	<small><%= @task.task_status %></small></h3>
+
+<h4> In List <%= link_to @list.name, task_path(@list.id) %> 
+	<br>
+ 	<%= button_to 'Delete Task', @task, method: :delete %>
+ </h4>
+
+<legend></legend>
+<%= render 'edit_form' %>
