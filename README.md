@@ -5,3 +5,6 @@
     $ bundle install
     $ rake db:migrate
     $ rails s
+
+Open your favorite browser and go to
+    http://localhost:3000
