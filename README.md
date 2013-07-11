@@ -6,4 +6,4 @@
     $ rake db:migrate
     $ rails s
 
-Open your favorite browser and go to [This link] (http://localhost:3000/)
+Open `http://localhost:3000/` in your favorite browser.
