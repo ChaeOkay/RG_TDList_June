@@ -56,7 +56,7 @@ module TDList
 
     # Enable the asset pipeline
     # REMOVED FOR RAIL 4.0.0.rc2
-    # config.assets.enabled = true
+    config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
