@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>TDList</title>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page-header">
+      <h1><%= link_to "Task Lists", root_path %>
+        <small>Rails Girls Atlanta Project</small>
+      </h1>
+    </div>
+
+    <div class="container">
+    <%= yield %>
+    </div>
+  </body>
+</html>

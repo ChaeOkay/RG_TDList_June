@@ -1,0 +1,19 @@
+<h3>Edit List : <%= link_to @list.name, task_path(@list.id) %> </h3>
+
+<h4> With Tasks : 
+  <% if @tasks.empty? %>
+      none
+  <% else %>
+		<% @tasks.each do |t| %>
+      <small>
+			<%= t.description %>
+      </small>
+		<% end %>
+  <% end %>
+
+  <br>
+ <%= button_to 'Delete List', @list, method: :delete %>
+</h4>
+
+<legend></legend>
+<%= render 'form' %>

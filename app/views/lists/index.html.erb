@@ -1,0 +1,17 @@
+<tbody>
+  <div class="new">
+	 <%= link_to 'Create New List', new_list_path %>
+  </div>
+  <div class="new" id="notice"><%= notice %>
+  </div>
+
+  <div>
+    <% @lists.each do |list| %>
+      <h3>
+        <span style="color:#999999"> - </span>  
+        <%= link_to list.name, list %> 
+        <small style="color:#999999"><%=list.list_status%></small>
+      </h3>
+     <% end %>
+  </div>
+</tbody>

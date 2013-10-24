@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= @list.name %> 
+  <small> <%= @list.list_status %></small> 
+  <small><%= link_to 'Edit List', edit_list_path(@list) %></small> 
+</h3>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td><%= link_to "Create New Task", new_task_path %></td>
+    </tr>
+  	<tr>
+  		<th>Task Description</th>
+  		<th>Status</th>
+  	</tr>
+    <legend></legend>
+  <% @tasks.each do |t| %>
+  <tbody>
+    <td><%= link_to t.description, edit_task_path(t) %></td>
+    <td><%= link_to t.task_status, edit_task_path(t) %></td>
+  </tbody>
+  <% end %>
+</table>
