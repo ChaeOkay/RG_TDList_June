@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0.rc2'
-gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pg', '0.15.1'
@@ -33,6 +32,7 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
+  gem 'rails_12factor'
 end
 
 gem 'simple_form'
