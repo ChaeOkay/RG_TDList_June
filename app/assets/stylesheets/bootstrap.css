@@ -690,7 +690,7 @@ p {
 
 small {
   font-size: 70%;
-  margin: 0 2px 0 3px;  /changed
+  margin: 0 2px 0 3px;  //changed
 }
 
 strong {
