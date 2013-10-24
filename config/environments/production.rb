@@ -17,7 +17,11 @@ TDList::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
+<<<<<<< HEAD
   config.assets.compile = true
+=======
+  config.assets.compile = false
+>>>>>>> 71ae24cb6df05eca4eff7e4ada5099a72f8a73aa
 
   # Generate digests for assets URLs
   config.assets.digest = true
